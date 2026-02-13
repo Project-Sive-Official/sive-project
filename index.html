@@ -3,34 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sive Project Official | ホーム</title>
+    <title>Sive Project Official | HOME</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; background: #f9f9f9; color: #333; }
-        nav { background: #444; color: #fff; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center; }
+        /* 背景をダークグレーにして目に優しく */
+        body { 
+            font-family: sans-serif; 
+            line-height: 1.6; 
+            max-width: 900px; 
+            margin: auto; 
+            padding: 0; 
+            background: #1a1c1e; 
+            color: #e0e0e0; 
+        }
+        
+        nav { 
+            background: #000; 
+            padding: 20px; 
+            text-align: center; 
+            border-bottom: 1px solid #333;
+        }
         nav a { color: #fff; text-decoration: none; margin: 0 10px; font-weight: bold; }
-        .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; text-align: center; }
-        .hero-images img { width: 45%; max-width: 280px; height: auto; margin: 10px; }
-        footer { text-align: center; font-size: 0.8em; color: #777; margin-top: 40px; }
+        nav a:hover { color: #8ecae6; }
+
+        .container { padding: 20px; }
+        .card { 
+            background: #25282c; 
+            padding: 40px 20px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            margin-bottom: 30px; 
+            text-align: center; 
+            border: 1px solid #333;
+        }
+
+        h1 { color: #fff; margin-bottom: 30px; }
+
+        .hero-images { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .img-box { width: 40%; max-width: 280px; }
+        .hero-images img { width: 100%; height: auto; border-radius: 10px; transition: 0.3s; }
+        .hero-images img:hover { transform: scale(1.05); }
+
+        .notice { 
+            background: #2d3136; 
+            border-left: 5px solid #e63946; 
+            padding: 20px; 
+            border-radius: 8px; 
+            text-align: left;
+            color: #ccc;
+        }
+        
+        footer { text-align: center; padding: 40px; color: #666; font-size: 0.8em; }
     </style>
 </head>
 <body>
     <nav>
-        <a href="index.html">ホーム</a> | 
-        <a href="nanoka.html">ナノカ</a> | <a href="jack.html">ジャック</a> | 
-        <a href="rules_nanoka.html">ナノカ規約</a> | <a href="rules_jack.html">ジャック規約</a>
+        <a href="index.html">HOME</a> | <a href="nanoka.html">NANOKA</a> | <a href="jack.html">JACK</a>
     </nav>
-    <div class="card">
-        <h1>Sive Project Official</h1>
-        <div class="hero-images">
-            <img src="ナノカ（ホーム）.AVIF" alt="ナノカ">
-            
-            <img src="正弦波（ホーム）.JPG" alt="正弦波くん">
+    
+    <div class="container">
+        <div class="card">
+            <h1>Sive Project Official</h1>
+            <div class="hero-images">
+                <div class="img-box">
+                    <img src="ナノカ（ホーム）.AVIF" alt="ナノカ">
+                    <p style="color:#8ecae6; font-weight:bold;">正幻波ナノカ</p>
+                </div>
+                <div class="img-box">
+                    <img src="正弦波（ホーム）.JPG" alt="正弦波くん">
+                    <p style="color:#e63946; font-weight:bold;">正弦波ジャック</p>
+                </div>
+            </div>
+            <p>UTAU単独音ライブラリー配布サイトです！</p>
         </div>
-        <p>正弦波くん、正幻波ナノカのUTAU単独音ライブラリー配布サイトです！</p>
-    </div>
-    <div class="card">
-        <h3>お知らせ：AI生成について</h3>
-        <p>基本的にAI生成（動画生成を含む）については規制しませんが、SNSや動画投稿サイト等への公開は（収益問わず）ご遠慮ください。その上で夢小説等をお楽しみ下さい！</p>
+
+        <div class="notice">
+            <h3 style="color: #e63946; margin-top: 0;">📢 AI生成について</h3>
+            <p>個人で楽しむ範囲（夢小説等）は自由ですが、SNSや動画サイトへの公開はご遠慮ください。</p>
+        </div>
     </div>
     <footer>© 2026 Project-Sive-Official</footer>
 </body>
